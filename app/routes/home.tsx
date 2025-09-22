@@ -1,12 +1,12 @@
 import Navbar from "~/component/Navbar";
-import type { Route } from "./+types/home";
+
 import { resumes } from "content";
 import ResumeCard from "~/component/ResumeCard";
 import { useEffect } from "react";
 import {  useNavigate } from "react-router";
 import { usePuterStore } from "~/lib/puter";
 
-export function meta({}: Route.MetaArgs) {
+export function meta({}) {
   return [
     { title: "ai-resume" },
     {
@@ -35,9 +35,9 @@ export default function Home() {
         </div>
 
         {resumes.length > 0 && (
-          <div className="  flex flex-wrap gap-4 justify-center ">
+          <div className="  flex flex-wrap gap-10 justify-center ">
             {resumes.map((resume) => (
-              <ResumeCard key={resume.id} resume={resume} />
+              <ResumeCard key={resume.id} resume={resume}  />
             ))}
           </div>
         )}

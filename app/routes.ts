@@ -8,6 +8,10 @@ export default [
     {
         path: "/auth",
         file: "routes/auth.tsx"
+    },
+    {
+        path:"/Upload",
+        file:"routes/Upload.tsx"
     }
 ] satisfies RouteConfig;
 
