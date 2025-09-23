@@ -7,6 +7,7 @@ export const meta = () => ([
     { name: 'description', content: 'Log into your account' },
 ])
 
+<<<<<<< HEAD
 const Auth = () => {
     const { isLoading, auth } = usePuterStore();
     const location = useLocation();
@@ -15,6 +16,17 @@ const Auth = () => {
 
     useEffect(() => {
         if(auth.isAuthenticated) navigate(next);
+=======
+const auth = () => {
+    const { isLoading, auth } = usePuterStore();
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+    const next = searchParams.get('next') || '/';
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(auth.isAuthenticated && next) navigate(next);
+>>>>>>> de14fa827efa76af937c80dcd63f8c33d18d0d10
     }, [auth.isAuthenticated, next])
 
     return (
@@ -50,4 +62,8 @@ const Auth = () => {
     )
 }
 
+<<<<<<< HEAD
 export default Auth
+=======
+export default auth
+>>>>>>> de14fa827efa76af937c80dcd63f8c33d18d0d10

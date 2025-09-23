@@ -260,6 +260,10 @@ export const usePuterStore = create<PuterStore>((set, get) => {
         setTimeout(() => {
             clearInterval(interval);
             if (!getPuter()) {
+<<<<<<< HEAD
+=======
+                console.error("Puter.js failed to load. Check for network issues or if the Puter.js service is down.");
+>>>>>>> de14fa827efa76af937c80dcd63f8c33d18d0d10
                 setError("Puter.js failed to load within 10 seconds");
             }
         }, 10000);
@@ -453,4 +457,8 @@ export const usePuterStore = create<PuterStore>((set, get) => {
         init,
         clearError: () => set({ error: null }),
     };
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> de14fa827efa76af937c80dcd63f8c33d18d0d10

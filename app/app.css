@@ -4,7 +4,11 @@
 
 @theme {
   --font-sans: "Mona Sans", ui-sans-serif, system-ui, sans-serif,
+<<<<<<< HEAD
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+=======
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+>>>>>>> de14fa827efa76af937c80dcd63f8c33d18d0d10
   --color-dark-200: #475467;
   --color-light-blue-100: #c1d3f81a;
   --color-light-blue-200: #a7bff14d;
@@ -27,11 +31,19 @@ main {
   @apply min-h-screen pt-10;
 }
 h1 {
+<<<<<<< HEAD
   @apply text-6xl  text-gradient leading-tight tracking-[-2px] font-semibold;
 }
 
 h2 {
   @apply text-3xl text-dark-200;
+=======
+  @apply max-sm:text-[3rem] text-6xl  text-gradient leading-tight xl:tracking-[-2px] font-semibold;
+}
+
+h2 {
+  @apply max-sm:text-xl text-3xl text-dark-200;
+>>>>>>> de14fa827efa76af937c80dcd63f8c33d18d0d10
 }
 
 label {
@@ -75,6 +87,7 @@ form {
     @apply primary-gradient rounded-full py-4 px-8 cursor-pointer w-[600px] max-md:w-full text-3xl font-semibold text-white;
   }
   .main-section {
+<<<<<<< HEAD
     @apply flex flex-col items-center gap-8 pt-12 mx-15 pb-5;
   }
   .page-heading {
@@ -86,6 +99,19 @@ form {
 
   .resume-card {
     @apply flex flex-col gap-8 h-[560px] w-full lg:w-[450px] xl:w-[490px] bg-white rounded-2xl p-4;
+=======
+    @apply flex flex-col items-center gap-8 pt-12 max-sm:mx-2 mx-15 pb-5;
+  }
+  .page-heading {
+    @apply flex flex-col items-center gap-8 max-w-4xl text-center max-sm:gap-4;
+  }
+  .resumes-section {
+    @apply flex flex-wrap max-md:flex-col max-md:gap-4 gap-6 items-start max-md:items-center w-full max-w-[1850px] justify-evenly;
+  }
+
+  .resume-card {
+    @apply flex flex-col gap-8 h-[560px] w-[350px] lg:w-[430px] xl:w-[490px] bg-white rounded-2xl p-4;
+>>>>>>> de14fa827efa76af937c80dcd63f8c33d18d0d10
   }
 
   .resume-card-header {
@@ -97,7 +123,11 @@ form {
   }
 
   .navbar {
+<<<<<<< HEAD
     @apply flex flex-row justify-between items-center bg-white rounded-full p-4 w-full px-10 max-w-[1200px] mx-auto;
+=======
+    @apply flex flex-row justify-between items-center bg-white rounded-full p-4 w-full px-10 max-w-[1200px] mx-auto sm:text-sm;
+>>>>>>> de14fa827efa76af937c80dcd63f8c33d18d0d10
   }
 
   .score-badge {
@@ -149,4 +179,8 @@ form {
   to {
     opacity: 1;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> de14fa827efa76af937c80dcd63f8c33d18d0d10
