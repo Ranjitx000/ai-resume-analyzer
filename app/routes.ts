@@ -12,6 +12,10 @@ export default [
     {
         path:"/Upload",
         file:"routes/Upload.tsx"
+    },
+     {
+        path:"/resume/:id",
+        file:"routes/Resume.tsx"
     }
 ] satisfies RouteConfig;
 
